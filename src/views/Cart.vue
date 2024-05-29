@@ -49,7 +49,7 @@ const closeModal = () => {
   <div>
     <div v-if="cart && cart.length > 0">
       <ul class="flex flex-wrap">
-        <li v-for="item in cart" :key="item.id" class="mb-6 w-1/2">
+        <li v-for="item in cart" :key="item.id" class="mb-6 w-full lg:w-1/2">
           <div class="flex itemList">
             <div class="itemMulti">
               <input type="checkbox" :value="item" @change="toggleSelection(item)" class="mr-2 checkbox">
